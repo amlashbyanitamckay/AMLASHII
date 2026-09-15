@@ -1,0 +1,71 @@
+/* AMLASH local SEO + location cards v10 */
+
+.visit-location {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, .95fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: end;
+  margin: clamp(2rem, 5vw, 4.5rem) 0 2rem;
+  padding: clamp(1.5rem, 3vw, 2.5rem) 0;
+  border-top: 1px solid rgba(24, 20, 18, .18);
+  border-bottom: 1px solid rgba(24, 20, 18, .18);
+}
+
+.visit-location__kicker {
+  margin: 0 0 .65rem;
+  font-family: var(--amlash-sans, "Montserrat", Arial, sans-serif);
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .13em;
+}
+
+.visit-location h3 {
+  margin: 0 0 .6rem;
+  font-family: var(--amlash-serif, "Cormorant Garamond", Georgia, serif);
+  font-size: clamp(2.25rem, 4vw, 4rem);
+  line-height: .95;
+  font-weight: 500;
+  letter-spacing: -.025em;
+}
+
+.visit-location__address {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.visit-booking-tiles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .9rem;
+}
+
+.visit-action {
+  min-height: 132px;
+  width: 100%;
+}
+
+.visit-action .tile-label {
+  display: block;
+}
+
+.visit-action .tile-sub {
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .visit-location {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+}
+
+@media (max-width: 560px) {
+  .visit-booking-tiles {
+    grid-template-columns: 1fr;
+  }
+
+  .visit-action {
+    min-height: 105px;
+  }
+}
